@@ -10,6 +10,7 @@ public class NodeMain {
 		myStack.push(firstNode);
 		myStack.push(secondNode);
 		myStack.push(thirdNode);
+		myStack.peek();
 		myStack.printMyNodes();
 	}
 
