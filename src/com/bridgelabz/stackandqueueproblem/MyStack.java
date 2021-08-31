@@ -27,5 +27,8 @@ public class MyStack<K> {
 		}
 		System.out.print("null");
 	}
+	public void peek() {
+		System.out.println(head.getKey()+" is present at the top of the stack");
+	}
 
 }
