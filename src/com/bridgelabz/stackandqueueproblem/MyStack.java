@@ -25,10 +25,22 @@ public class MyStack<K> {
 			System.out.print(tempNode.getKey() + "->");
 			tempNode = tempNode.getNext();
 		}
-		System.out.print("null");
+		System.out.println("null");
 	}
+	
 	public void peek() {
 		System.out.println(head.getKey()+" is present at the top of the stack");
+	}
+	
+	public void popAll() {
+		INode currentNode;
+		while(head!=null) {
+			currentNode=head;
+			peek();
+			System.out.println(currentNode.getKey()+" is poped");
+			head = head.getNext();
+			currentNode=null;
+		}
 	}
 
 }
