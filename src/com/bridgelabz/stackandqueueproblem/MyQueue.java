@@ -1,4 +1,6 @@
 package com.bridgelabz.stackandqueueproblem;
+
+
 public class MyQueue<K> {
 	private K key;
 	private INode head;
@@ -27,5 +29,17 @@ public class MyQueue<K> {
 			System.out.print(tempNode.getKey() + "->");
 			tempNode = tempNode.getNext();
 		}
+		System.out.println();
+	}
+	public void dequeue() {
+		INode previousNode = null, currentNode = head;
+		while (currentNode.getNext() != null) {
+			previousNode = currentNode;
+			currentNode = currentNode.getNext();
+		}
+		previousNode.setNext(null);
+		tail = previousNode;
+		System.out.println("deleted " + currentNode.getKey());
+		currentNode = null;
 	}
 }
