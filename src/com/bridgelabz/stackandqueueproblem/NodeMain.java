@@ -7,12 +7,11 @@ public class NodeMain {
 		Node<Integer> secondNode = new Node<>(30);
 		Node<Integer> thirdNode = new Node<>(56);
 		MyStack<Integer> myStack = new MyStack<Integer>();
-		myStack.push(firstNode);
-		myStack.push(secondNode);
-		myStack.push(thirdNode);
-		myStack.printMyNodes();
-		myStack.popAll();
-		myStack.printMyNodes();
+		MyQueue<Integer> myQueue = new MyQueue<Integer>();
+		myQueue.enQueue(firstNode);
+		myQueue.enQueue(secondNode);
+		myQueue.enQueue(thirdNode);
+		myQueue.printMyNodes();
 	}
 
 }
